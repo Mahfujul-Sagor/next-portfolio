@@ -1,6 +1,6 @@
 import { SKILLS } from '@/constants/index';
 import React from 'react'
-import {motion} from 'framer-motion';
+import { MotionDiv } from './MotionDiv';
 
 
 const containerVariants = {
@@ -9,8 +9,8 @@ const containerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
-      staggerChildren: 0.5,
+      duration: 0.5,
+      staggerChildren: 0.2,
     },
   },
 }
@@ -24,14 +24,14 @@ const Skills = () => {
   return (
     <div className='container mx-auto' id='skills'>
       <h2 className='mb-12 mt-20 text-center text-4xl font-semibold'>Skills</h2>
-      <motion.div 
+      <MotionDiv 
       initial='hidden'
       whileInView='visible'
       variants={containerVariants}
       viewport={{once : true}}
       className='mx-2 rounded-3xl flex flex-col px-4 py-2 lg:px-20 border border-stone-50/30'>
         {SKILLS.map((skill, index)=> (
-          <motion.div 
+          <MotionDiv 
           variants={itemVariants}
           key={index} className={`py-6 flex items-center justify-between ${index !== SKILLS.length - 1 ? "border-b border-stone-50/30" : ""}`}>
             <div className="flex items-center">
@@ -41,9 +41,9 @@ const Skills = () => {
             <div className='text-md font-semibold lg:text-xl'>
               <span>{skill.experience}</span>
             </div>
-          </motion.div>
+          </MotionDiv>
         ))}
-      </motion.div>
+      </MotionDiv>
     </div>
   )
 }
