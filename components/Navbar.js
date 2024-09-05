@@ -74,7 +74,7 @@ const Navbar = () => {
             </div>
           </div>
           {isOpen && (
-            <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
+            <ul className="ml-4 mt-4 flex flex-col gap-4">
               {NAVIGATION_LINKS.map((item, index)=> (
                   <li key={index}>
                     <Link href={item.href} className='text-md' onClick={(e)=> handleLinkClick(e, item.href)}>{item.label}</Link>
