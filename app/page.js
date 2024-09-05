@@ -10,11 +10,10 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className='relative h-full overflow-y-auto'>
-      <div className='fixed inset-0 bg-fixed bg-cover bg-img bg-center'></div>
-      <div className='relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto'>
-        <Hero/>
+    <div className='h-full overflow-y-auto'>
         <Navbar/>
+      <div className='flex flex-col items-center p-4 space-y-8 container mx-auto max-md:mt-32'>
+        <Hero/>
         <Projects/>
         <Bio/>
         <Skills/>

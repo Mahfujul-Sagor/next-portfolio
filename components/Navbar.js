@@ -31,8 +31,8 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className='fixed top-4 left-0 right-0 z-50'>
+    <>
+      <nav className='fixed top-4 left-0 right-0 z-50 px-2'>
         {/* Desktop menu */}
         <div className='mx-auto hidden max-w-3xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/30 py-3 backdrop-blur-lg lg:flex'>
           <div className='flex items-center justify-between gap-6'>
@@ -58,9 +58,9 @@ const Navbar = () => {
         <div className='rounded-lg lg:hidden max-w-3xl py-3 px-4 mx-auto border border-stone-50/30 bg-black/30 backdrop-blur-lg'>
           <div className='flex items-center justify-between'>
             <div>
-              <Link href='#' className='text-2xl'>
+              <span className='font-bold text-xl sm:text-2xl'>
                 Mahfujul Sagor
-              </Link>
+              </span>
             </div>
             <div className="flex items-center gap-4">
               <ModeToggle/>
@@ -84,7 +84,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </div>
+    </>
   );
 }
 
