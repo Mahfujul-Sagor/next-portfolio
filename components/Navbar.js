@@ -37,9 +37,9 @@ const Navbar = () => {
         <div className='mx-auto hidden max-w-3xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/30 py-3 backdrop-blur-lg lg:flex'>
           <div className='flex items-center justify-between gap-6'>
             <div>
-              <Link href='#' className='font-bold text-2xl'>
+              <span className='font-bold text-2xl'>
                 Mahfujul Sagor
-              </Link>
+              </span>
             </div>
             <div>
               <ul className="flex items-center gap-4">
