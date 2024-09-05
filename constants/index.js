@@ -165,11 +165,11 @@ export const SOCIAL_MEDIA_LINKS = [
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "#",
+    href: "https://www.instagram.com/mahfujul.sagor",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "#",
+    href: "https://x.com/mahfujul_sagor",
     icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
   },
   {
@@ -177,7 +177,7 @@ export const SOCIAL_MEDIA_LINKS = [
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/in/mahfujul-sagor",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
 ];
