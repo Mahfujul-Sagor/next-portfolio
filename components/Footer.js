@@ -1,23 +1,25 @@
 import React from 'react'
-import logo from '@/public/logo.png'
-import Image from 'next/image'
 import { SOCIAL_MEDIA_LINKS } from '@/constants/index'
 import { MotionDiv } from './MotionDiv'
 import { MotionA } from './MotionA'
 
 const Footer = () => {
+
+  const date = new Date().getFullYear();
+
   return (
     <div className='mb-8 mt-20'>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center text-2xl font-bold">
         <MotionDiv
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.5}}
+        className='mb-1'
         >
-          <Image src={logo} alt='logo' width={200} className='my-20'/>
+          Mahfujul Sagor
         </MotionDiv>
       </div>
-      <div className="flex items-center justify-center gap-8">
+      <div className="flex items-center justify-center gap-6 md:gap-8">
         {SOCIAL_MEDIA_LINKS.map((link, index)=> (
           <MotionA 
           initial={{opacity: 0}}
@@ -28,7 +30,7 @@ const Footer = () => {
           </MotionA>
         ))}
       </div>
-      <p className='mt-8 text-center text-sm tracking-wide text-gray-400'>&copy;compileTab. All rights reserved.</p>
+      <p className='mt-8 text-center text-xs sm:text-sm tracking-wide'>&copy; {date} compileTab. All rights reserved.</p>
     </div>
   )
 }

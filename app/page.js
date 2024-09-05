@@ -10,7 +10,7 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className='relative h-full overflow-y-auto antialiased'>
+    <div className='relative h-full overflow-y-auto'>
       <div className='fixed inset-0 bg-fixed bg-cover bg-img bg-center'></div>
       <div className='relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto'>
         <Hero/>

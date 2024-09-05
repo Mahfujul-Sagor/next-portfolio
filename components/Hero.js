@@ -1,7 +1,7 @@
 import { HERO } from '@/constants/index.js'
 import Image from 'next/image'
 import React from 'react'
-import carlImg from '@/public/carl.jpeg'
+import hero from '@/public/hero.jpg';
 import { MotionDiv } from './MotionDiv'
 
 const Hero = () => {
@@ -27,7 +27,7 @@ const Hero = () => {
             animate={{opacity: 1}}
             transition={{duration: 0.5}}
             className='rounded-3xl'>
-            <Image src={carlImg} width={550} height={550} alt='Mahfujul Sagor' className='rounded-3xl'/>
+            <Image src={hero} priority={true} width={550} height={550} alt='Mahfujul Sagor' className='rounded-3xl'/>
           </MotionDiv>
         </div>
       </MotionDiv>
