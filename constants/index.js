@@ -93,22 +93,22 @@ export const BIO = [
 
 export const SKILLS = [
   {
-    icon: <RiReactjsLine className="text-4xl text-blue-400 lg:text-5xl" />,
+    icon: <RiReactjsLine className="text-4xl lg:text-5xl" />,
     name: "React",
     experience: "2+ years",
   },
   {
-    icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
+    icon: <TbBrandNextjs className="text-4xl lg:text-5xl" />,
     name: "Next.js",
     experience: "1+ year",
   },
   {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+    icon: <SiMongodb className="text-4xl lg:text-5xl" />,
     name: "MongoDB",
     experience: "1+ years",
   },
   {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
+    icon: <FaNodeJs className="text-4xl lg:text-5xl" />,
     name: "Node.js",
     experience: "2+ years",
   },
