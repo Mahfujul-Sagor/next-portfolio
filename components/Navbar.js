@@ -37,9 +37,9 @@ const Navbar = () => {
         <div className='mx-auto hidden max-w-3xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/30 py-3 backdrop-blur-lg lg:flex'>
           <div className='flex items-center justify-between gap-6'>
             <div>
-              <span className='font-bold text-2xl'>
+              <Link href='#home' className='font-bold text-2xl'>
                 Mahfujul Sagor
-              </span>
+              </Link>
             </div>
             <div>
               <ul className="flex items-center gap-4">
@@ -58,9 +58,9 @@ const Navbar = () => {
         <div className='rounded-lg lg:hidden max-w-3xl py-3 px-4 mx-auto border border-stone-50/30 bg-black/30 backdrop-blur-lg'>
           <div className='flex items-center justify-between'>
             <div>
-              <span className='font-bold text-xl sm:text-2xl'>
+              <Link href='#home' className='font-bold text-xl sm:text-2xl'>
                 Mahfujul Sagor
-              </span>
+              </Link>
             </div>
             <div className="flex items-center gap-4">
               <ModeToggle/>
