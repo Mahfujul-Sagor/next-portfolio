@@ -45,7 +45,7 @@ const Navbar = () => {
               <ul className="flex items-center gap-4">
                 {NAVIGATION_LINKS.map((item, index)=> (
                   <li key={index}>
-                    <Link href={item.href} className='text-md' onClick={(e)=> handleLinkClick(e, item.href)}>{item.label}</Link>
+                    <Link href={item.href} className='text-md' onClick={(e)=> handleLinkClick(e, '#home')}>{item.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -57,7 +57,7 @@ const Navbar = () => {
         <div className='rounded-lg lg:hidden max-w-3xl py-3 px-4 mx-auto border border-stone-50/30 bg-black/30 backdrop-blur-lg'>
           <div className='flex items-center justify-between'>
             <div>
-              <Link href='#home' onClick={(e)=> handleLinkClick(e, item.href)} className='font-bold text-xl sm:text-2xl'>
+              <Link href='#home' onClick={(e)=> handleLinkClick(e, '#home')} className='font-bold text-xl sm:text-2xl'>
                 Mahfujul Sagor
               </Link>
             </div>
