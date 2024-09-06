@@ -53,7 +53,6 @@ const Navbar = () => {
             <ModeToggle/>
           </div>
         </div>
-
         {/* Mobile menu */}
         <div className='rounded-lg lg:hidden max-w-3xl py-3 px-4 mx-auto border border-stone-50/30 bg-black/30 backdrop-blur-lg'>
           <div className='flex items-center justify-between'>
