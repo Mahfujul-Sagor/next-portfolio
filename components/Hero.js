@@ -6,7 +6,7 @@ import { MotionDiv } from './MotionDiv'
 
 const Hero = () => {
   return (
-    <section className='min-h-screen flex flex-wrap items-center' id='#home'>
+    <section className='min-h-screen flex flex-wrap items-center' id='home'>
       <MotionDiv 
       initial={{opacity: 0, x: -50}}
       animate={{opacity: 1, x: 0}}
