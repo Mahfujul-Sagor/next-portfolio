@@ -16,7 +16,7 @@ const WorkExperience = () => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 0.5, delay: 0.2}}
-      className='space-y-8 p-10'>
+      className='space-y-8'>
         {EXPERIENCES.map((experience, index)=> (
           <MotionDiv 
           initial={{opacity: 0, x: -20}}

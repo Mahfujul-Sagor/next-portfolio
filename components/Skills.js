@@ -29,7 +29,7 @@ const Skills = () => {
       whileInView='visible'
       variants={containerVariants}
       viewport={{once : true}}
-      className='mx-2 rounded-3xl flex flex-col px-4 py-2 lg:px-20 border border-stone-50/30'>
+      className='rounded-3xl flex flex-col px-4 py-2 lg:px-20 border border-stone-50/30'>
         {SKILLS.map((skill, index)=> (
           <MotionDiv 
           variants={itemVariants}
